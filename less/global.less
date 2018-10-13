@@ -1,0 +1,268 @@
+@develop-mode: false;
+
+
+
+//@font-round-medi: "DINRoundPro-Medi", "DINRoundPro", sans-serif;
+//@medium: 500;
+
+
+
+
+@width-sm: 576px;
+@width-md: 768px;
+@width-lg: 1040px;
+
+@width-xl: 1230px;
+@width-1366: 1367px;
+@width-xxl: 1800px;
+
+
+@height-sm: 600px;
+@height-md: 768px;
+@height-lg: 1000px;
+
+@color-orange: #ff6319;
+@color-green: #79c247;
+
+@font-bebas: 'Bebas Neue', sans-sarif;
+@font-muller: 'Muller', sans-sarif;
+
+
+@global-color: #fbea0a;
+@global-color-darkness: #ffc300;
+@global-radius: 30px;
+@sprite-url: url(../img/sprite.png);
+@animation: all .3s ease;
+
+.btn-normalize () {
+	font-family: @font-muller;
+	display: inline-block;
+	border-radius: 0;
+	padding: 0;
+	outline: none;
+	border: 0;
+	cursor: pointer;
+	text-decoration: none;
+	position: relative;
+	background: none;
+	overflow: hidden;
+	vertical-align: middle;
+	transform: translateZ(0);
+	text-align: center;
+	-webkit-tap-highlight-color: transparent;
+}
+
+
+
+
+
+
+
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+
+	-webkit-font-smoothing: antialiased;
+	font-family: @font-muller;
+	font-size: 14px;
+	background: black;
+
+	& when (@develop-mode =true) {
+		//	background: url(/img/rm/1.jpg) no-repeat center top;
+		//	background: url(/img/rm/1366.jpg) no-repeat center top;
+		//	background: url(/img/rm/768.jpg) no-repeat center top;
+		background: url(/img/rm/mobile.jpg) no-repeat center 94px;
+	}
+}
+
+img,
+video,
+audio {
+	max-width: 100%;
+	height: auto;
+}
+
+//::selection {
+//	color: #000;
+//	background: @global-color;
+//}
+//
+//
+
+.nowrap {
+	white-space: nowrap;
+}
+
+
+.item-group {
+	border-bottom: 1px solid #f1ee45;
+	display: flex;
+	align-items: baseline;
+	position: relative;
+	margin-bottom: 18px;
+	color: white;
+
+	//	&_black {
+	//		color: black;
+	//		border-bottom: 1px solid #e1e1e1;
+	//	}
+	&_icon {
+		&:before {
+			content: '';
+			position: absolute;
+
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		> .item-group__input,
+		> .item-group__textarea {
+			padding-left: 38px;
+		}
+	}
+
+	&_icon-top {
+		&:before {
+			top: 7px;
+			transform: none;
+
+			@media (min-width: @width-lg) {
+				top: 9px;
+			}
+
+			@media (min-width: @width-1366) {
+				top: 13px;
+			}
+		}
+	}
+
+	&_icon-user {
+		&:before {
+			width: 16px;
+			height: 16px;
+			//			background: @sprite-url -82px -1px no-repeat;
+			background: data-uri('../img/profile.svg') center no-repeat;
+			background-size: contain;
+			left: 12px;
+		}
+	}
+
+	&_icon-tel {
+		&:before {
+			width: 16px;
+			height: 16px;
+			//			background: @sprite-url -100px -1px no-repeat;
+			background: data-uri('../img/phone.svg') center no-repeat;
+			background-size: contain;
+			left: 12px;
+		}
+	}
+
+	&_icon-email { 
+		&:before {
+			width: 18px;
+			height: 13px;
+			background: data-uri('../img/mail.svg') center no-repeat;
+			background-size: contain;
+			left: 10px;
+		}
+	}
+	
+	&_icon-muscul { 
+		&:before {
+			width: 15px;
+			height: 17px;
+			background: data-uri('../img/musculous-arm-silhouette.svg') center no-repeat;
+			background-size: contain;
+			left: 10px;
+		}
+	}
+	
+	&_icon-build {
+		&:before {
+			width: 15px;
+			height: 15px;
+			background: data-uri('../img/building.svg') center no-repeat;
+			background-size: contain;
+			left: 10px;
+		}
+	}
+
+	&__label {
+		position: absolute;
+		color: #79c249;
+		font-weight: 300;
+
+		height: 100%;
+		left: 38px;
+
+		font-size: 12px;
+		padding: 10px 0 9px;
+
+
+		@media (min-width: @width-lg) {
+			font-size: 14px;
+		}
+
+		@media (min-width: @width-1366) {
+			font-size: 16px;
+			padding: 14px 0 11px;
+		}
+	}
+
+	&__input {
+		color: inherit;
+		width: 100%;
+
+		padding: 10px 15px 9px;
+		border-radius: 0;
+		border: 0;
+		box-shadow: none;
+		background: none;
+		font-size: 12px;
+		font-weight: 300;
+		transition: all .3s ease;
+		outline: none;
+		font-family: @font-muller;
+
+		@media (min-width: @width-lg) {
+			font-size: 14px;
+		}
+
+		@media (min-width: @width-1366) {
+			font-size: 16px;
+			padding: 13px 15px 12px;
+		}
+	}
+
+	&__textarea {
+
+		color: inherit;
+		width: 100%;
+
+		padding: 10px 15px 9px;
+		border-radius: 0;
+		border: 0;
+		box-shadow: none;
+		background: none;
+		font-size: 12px;
+		font-weight: 300;
+		transition: all .3s ease;
+		outline: none;
+		font-family: @font-muller;
+
+		@media (min-width: @width-lg) {
+			font-size: 14px;
+		}
+
+		@media (min-width: @width-1366) {
+			font-size: 16px;
+			padding: 13px 15px 12px;
+			min-height: 43px;
+		}
+	}
+}

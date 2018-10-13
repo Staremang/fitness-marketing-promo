@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Fitness Marketing</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body class="a-body">
+	<div class="a-wrapper">
+		<header class="a-header">
+			<div class="a-header__container container container-l container-xl">
+				<div class="a-header__logo"></div>
+				<div class="a-header__center">
+					Привлекаем клиентов в фитнес-клубы по России и СНГ
+				</div>
+				<div class="a-header__right-block">
+					<button data-fancybox data-src="#call-me" title="Заказать звонок" class="p-btn">Заказать звонок</button>
+				</div>
+			</div>
+		</header>
+		<div class="a-content">
+			<div class="container container-l container-xl ">
+				<div class="a-form">
+					<h1 class="a-form__title">
+						<span>НУЖНЫ КЛИЕНТЫ</span>
+						В ФИТНЕС-КЛУБ?
+					</h1>
+					<h1 class="a-form__title-mobile">
+						<span>Привлекаем клиентов</span>
+						в фитнес-клубы
+						по России и СНГ
+					</h1>
+					<p class="a-form__description">
+						Скачайте наше <span>коммерческое предложение + бонус <span class="nowrap">PDF-инструкция</span></span> «7 проверенных инструментов привлечения клиентов в фитнес»
+					</p>
+
+					<button class="a-form__btn p-btn" data-fancybox data-src="#anketa" title="СКАЧАТЬ ПРЕДЛОЖЕНИЕ И PDF-ИНСТРУКЦИЮ">СКАЧАТЬ ПРЕДЛОЖЕНИЕ И PDF-ИНСТРУКЦИЮ</button>
+					<button class="a-form__btn-mobile p-btn" data-fancybox data-src="#anketa" title="СКАЧАТЬ ПРЕДЛОЖЕНИЕ И PDF-ИНСТРУКЦИЮ">Скачать</button>
+				</div>
+			</div>
+		</div>
+		<div class="a-list">
+			<div class="a-list__container">
+				<div class="a-list__title">с нами работают:</div>
+			</div>
+			<div class="a-list__container">
+				<a href="#" class="a-list__item"><img src="img/logo-xfit.png" alt="X-fit"></a>
+				<a href="#" class="a-list__item"><img src="img/logo-legenda.png" alt="Легенда"></a>
+				<a href="#" class="a-list__item"><img src="img/logo-molot.png" alt="Молот"></a>
+				<a href="#" class="a-list__item"><img src="img/logo-kolizey.png" alt="Колизей"></a>
+				<a href="#" class="a-list__item"><img src="img/logo-stilgi.png" alt="Стиль Жи"></a>
+				<a href="#" class="a-list__item"><img src="img/logo-arena.png" alt="Арена"></a>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<form class="a-popup" id="call-me">
+		<div class="a-popup__title">Закажите звонок</div>
+		<div class="a-popup__description">И наш менеджер свяжется с Вами в течение 5 минут</div>
+		<div class="a-popup__form">
+			<label class="a-popup__input-group item-group item-group_icon item-group_icon-user">
+				<input type="text" autocomplete="name" name="name" class="a-popup__input item-group__input" placeholder="Введите Ваше имя" required>
+			</label>
+			<label class="a-popup__input-group item-group item-group_icon item-group_icon-tel">
+				<input type="tel" autocomplete="tel" name="tel" class="a-popup__input item-group__input" placeholder="Телефон для связи" required>
+			</label>
+		</div>
+		<input type="hidden" name="form-type" value="call-me">
+		<button type="submit" class="a-popup__btn p-btn" title="Отправить форму">Заказать звонок</button>
+	</form>
+
+	<form class="a-popup" id="anketa">
+		<div class="a-popup__title">ДЛЯ ПОЛУЧЕНИЯ МАТЕРИАЛОВ ЗАПОЛНИТЕ ФОРМУ</div>
+		<div class="a-popup__description">Мы отправим вам на почту PDF файлы с коммерческим предложением и инструкцией в течение 1 минуты</div>
+		<div class="a-popup__form">
+			<label class="a-popup__input-group item-group item-group_icon item-group_icon-user">
+				<input type="text" autocomplete="name" name="name" class="a-popup__input item-group__input" placeholder="Введите Ваше имя" required>
+			</label>
+			<label class="a-popup__input-group item-group item-group_icon item-group_icon-tel">
+				<input type="tel" autocomplete="tel" name="tel" class="a-popup__input item-group__input" placeholder="Введите Ваш телефон" required>
+			</label>
+			<label class="a-popup__input-group item-group item-group_icon item-group_icon-email">
+				<input type="email" autocomplete="email" name="email" class="a-popup__input item-group__input" placeholder="E-mail для отправки письма" required>
+			</label>
+
+			<label class="a-popup__input-group item-group item-group_icon item-group_icon-build">
+				<input type="text" name="city" class="a-popup__input item-group__input" placeholder="Город" required>
+			</label>
+
+			<label class="a-popup__input-group item-group item-group_icon item-group_icon-muscul">
+				<input type="text" name="clubname" class="a-popup__input item-group__input" placeholder="Название фитнес-клуба" required>
+			</label>
+		</div>
+		<input type="hidden" name="form-type" value="anketa">
+		<button type="submit" class="a-popup__btn p-btn" title="Отправить форму">получить материалы</button>
+	</form>
+
+
+	<div class="a-popup" id="thanks">
+		<div class="a-popup__title">Спасибо!</div>
+		<div class="a-popup__subtitle">Ваша заявка отправлена!</div>
+		<div class="a-popup__description">В ближайшее время мы с Вами свяжемся.</div>
+		<button data-fancybox-close class="a-popup__btn p-btn">Ок!</button>
+	</div>
+
+	<div class="a-popup" id="thanks-2">
+		<div class="a-popup__title">Спасибо!</div>
+		<div class="a-popup__subtitle">Ваша заявка отправлена!</div>
+		<div class="a-popup__description">Коммерческое предложение и инструкция уже отпралвены на вашу почту. В ближайшее время мы с Вами свяжемся.</div>
+		<button data-fancybox-close class="a-popup__btn p-btn">Ок!</button>
+	</div>
+
+
+	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<script src="js/lib/jquery.fancybox.min.js"></script>
+	<!--	<script src="/js/owl.carousel.min.js"></script>-->
+
+	<script src="js/lib/inputmask/inputmask.min.js"></script>
+	<script src="js/lib/inputmask/inputmask.extensions.min.js"></script>
+	<script src="js/lib/inputmask/jquery.inputmask.min.js"></script>
+
+	<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
