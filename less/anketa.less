@@ -55,12 +55,12 @@
 		opacity: .3;
 	}
 
-	@media (min-width: @width-lg) {
-		padding: 19px 30px 15px;
-		font-size: 12px;
-	}
+//	@media (min-width: @width-lg) {
+//		padding: 19px 30px 15px;
+//		font-size: 12px;
+//	}
 
-	@media (min-width: @width-1366) {
+	@media (min-width: @width-lg) {
 		padding: 27px 50px 23px;
 		font-size: 14px;
 	}
@@ -164,23 +164,26 @@
 	overflow: hidden;
 	flex-direction: column;
 
-	background-color: #121212;
-	background-repeat: no-repeat;
-	//	background-size: auto 100%;
-	background-position: top center;
-
-	background-image: url("@{a-url}img/a-bg-mobile.jpg");
-
-	@media (min-width: @width-lg) {
-		background-image: url("@{a-url}img/a-bg-1366.jpg");
-		//		background-size: auto 100%;
-		background-size: cover;
-		background-position: center;
-	}
-
-	@media (min-width: @width-1366) {
-		background-image: url("@{a-url}img/a-bg-1920.jpg");
-	}
+//	background-color: #121212;
+//	background-repeat: no-repeat;
+//	//	background-size: auto 100%;
+//	background-position: top center;
+//
+//	background-image: url("@{a-url}img/a-bg-mobile.jpg");
+//
+//	@media (min-width: @width-lg) {
+//		background-image: url("@{a-url}img/a-bg-1366.jpg");
+//		//		background-size: auto 100%;
+//		background-size: cover;
+//		background-position: center;
+//	}
+//
+//	@media (min-width: @width-1366) {
+//		background-image: url("@{a-url}img/a-bg-1920.jpg");
+//	}
+	
+	
+	background: url(/img/rm/1366.png) no-repeat center top;
 }
 
 .a-content {
@@ -208,10 +211,6 @@
 		//		}
 
 		@media (min-width: @width-lg) {
-			height: 110px;
-		}
-
-		@media (min-width: @width-1366) {
 			height: 150px;
 		}
 
@@ -358,7 +357,8 @@
 
 		@media (min-width: @width-lg) {
 			font-size: 16px;
-			margin-bottom: 15px;
+			line-height: 30px;
+			margin-bottom: 35px;
 			max-width: 520px;
 
 			color: #a7a7a7;
@@ -404,6 +404,9 @@
 	//	overflow: hidden;
 
 	@media (min-width: @width-lg) {
+		padding-bottom: 40px;
+	}
+	@media (min-width: @width-1366) {
 		padding-bottom: 55px;
 	}
 
@@ -423,6 +426,10 @@
 			font-weight: 300;
 			text-align: left;
 			color: #a7a7a7;
+			margin-bottom: 0;
+		}
+		@media (min-width: @width-1366) {
+			margin-bottom: 20px;
 		}
 	}
 
@@ -450,7 +457,7 @@
 		}
 
 		@media (min-width: @width-xl) {
-			max-width: 1170px + 30;
+			max-width: 1280px;
 		}
 
 		@media (min-width: @width-xxl) {
