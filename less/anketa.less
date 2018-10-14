@@ -55,10 +55,10 @@
 		opacity: .3;
 	}
 
-//	@media (min-width: @width-lg) {
-//		padding: 19px 30px 15px;
-//		font-size: 12px;
-//	}
+	//	@media (min-width: @width-lg) {
+	//		padding: 19px 30px 15px;
+	//		font-size: 12px;
+	//	}
 
 	@media (min-width: @width-lg) {
 		padding: 27px 50px 23px;
@@ -115,7 +115,7 @@
 			font-size: 30px;
 		}
 	}
-	
+
 	&__subtitle {
 		font-size: 21px;
 		line-height: 36px;
@@ -141,7 +141,7 @@
 			line-height: 21px;
 		}
 	}
-	
+
 	&__form {
 		//		margin-bottom: 16px;
 
@@ -181,9 +181,10 @@
 	@media (min-width: @width-1366) {
 		background-image: url("@{a-url}img/a-bg-1920.jpg");
 	}
-	
-	
-//	background: url(/img/rm/1366.png) no-repeat center top;
+
+
+
+	//	background: url(/img/rm/1920.png) no-repeat center top;
 }
 
 .a-content {
@@ -298,14 +299,12 @@
 	}
 
 	@media (min-width: @width-xxl) {
-		margin: 0 0 40px 0;
+		margin: 10px 0 0;
 	}
 
 	&__title {
 		text-transform: uppercase;
 		font-weight: bold;
-		font-size: 60px;
-		line-height: 75px;
 
 		margin-top: 0;
 		margin-bottom: 15px;
@@ -319,8 +318,9 @@
 		}
 
 		@media (min-width: @width-xxl) {
-			font-size: 70px;
-			line-height: 77px;
+			font-size: 60px;
+			line-height: 75px;
+			margin-bottom: 20px;
 		}
 
 		> span {
@@ -374,7 +374,7 @@
 			font-size: 20px;
 			line-height: 1.5;
 
-			margin-bottom: 35px;
+			margin-bottom: 45px;
 			max-width: 530px;
 		}
 	}
@@ -406,8 +406,9 @@
 	@media (min-width: @width-lg) {
 		padding-bottom: 40px;
 	}
+
 	@media (min-width: @width-1366) {
-		padding-bottom: 55px;
+		padding-bottom: 65px;
 	}
 
 	&__title {
@@ -428,6 +429,7 @@
 			color: #a7a7a7;
 			margin-bottom: 0;
 		}
+
 		@media (min-width: @width-1366) {
 			margin-bottom: 20px;
 		}
@@ -439,30 +441,8 @@
 		align-items: center;
 		flex-wrap: wrap;
 
-		margin-left: auto;
-		margin-right: auto;
-		padding-left: 15px;
-		padding-right: 15px;
-
-		max-width: 100%;
-
-		@media (min-width: @width-sm) {
-			max-width: 720px;
-		}
-
 		@media (min-width: @width-lg) {
-			max-width: 990px + 30;
-			//			margin-bottom: 38px;
 			flex-wrap: nowrap;
-		}
-
-		@media (min-width: @width-xl) {
-			max-width: 1280px;
-		}
-
-		@media (min-width: @width-xxl) {
-			padding: 0;
-			max-width: 1720px;
 		}
 	}
 
