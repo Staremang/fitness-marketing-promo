@@ -3128,7 +3128,22 @@ audio {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: url(/img/rm/1366.png) no-repeat center top;
+  background-color: #121212;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url("../img/a-bg-mobile.jpg");
+}
+@media (min-width: 1040px) {
+  .a-wrapper {
+    background-image: url("../img/a-bg-1366.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (min-width: 1367px) {
+  .a-wrapper {
+    background-image: url("../img/a-bg-1920.jpg");
+  }
 }
 .a-content {
   -webkit-box-flex: 1;
