@@ -3452,9 +3452,11 @@ audio {
   display: block;
   text-decoration: none;
   color: inherit;
+  opacity: 0.5;
 }
 .a-list__item:hover {
   position: relative;
+  opacity: 1;
 }
 .a-list__item:hover:before {
   content: '';
